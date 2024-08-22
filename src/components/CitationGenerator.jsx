@@ -30,7 +30,6 @@ export default function CitationGenerator() {
                         <p>- {activeQuote.author}</p>
                     </div>
                 ) : (
-                    // ""... loading ..."
                     <Spinner />
                 )
                 
