@@ -16,12 +16,6 @@ export default function CitationGenerator() {
         })
     }, [])
 
-
-
-
-
-
-
     function getRandomQuote() {
         const randomIndex = Math.floor(Math.random() * allQuotes.length);
         setActiveQuote(allQuotes[randomIndex]);
@@ -36,7 +30,7 @@ export default function CitationGenerator() {
                         <p>- {activeQuote.author}</p>
                     </div>
                 ) : (
-                    // "... Zitate laden ..."
+                    // ""... loading ..."
                     <Spinner />
                 )
                 
